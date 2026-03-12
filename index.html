@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alone Concept — Prémiové tiny house domy navržené s důrazem na detail, kvalitu a jedinečný životní styl.">
+  <title>Alone Concept | Tiny House</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====== HAMBURGER BUTTON ====== -->
+  <button class="hamburger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-main">
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+  </button>
+
+  <!-- ====== NAVIGATION OVERLAY ====== -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ====== NAVIGATION PANEL ====== -->
+  <nav class="nav" id="nav-main" aria-label="Hlavní navigace">
+    <div class="nav__header">
+      <img src="media/ALONE_kruh_panacek/SVG/logo ALONE panacek_C.svg" alt="Alone Concept logo" class="nav__logo">
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#o-nas" class="nav__link">O nás</a>
+        
+      </li>
+      <li class="nav__item">
+        <a href="#domy" class="nav__link">Domy</a>
+      </li>
+      <li class="nav__item">
+        <a href="#tinyhouse" class="nav__link">Tiny house</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Developerské projekty</a>
+      </li>
+    </ul>
+    <div class="nav__footer">
+      <p>info@aloneconcept.cz</p>
+      <p>+420 123 456 789</p>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <video
+      class="hero__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster=""
+    >
+      <source src="media/tinyhouse_timelapse.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero__content">
+      <img src="media/logo%20ALONE/PNG/logo%20ALONE_B.png" alt="Alone Concept" class="hero__tagline">
+      <div class="hero__body">
+        <h1 class="hero__title">Bydlení, které<br>má příběh</h1>
+        <p class="hero__subtitle">Prémiové tiny house domy navržené s důrazem na detail, kvalitu a jedinečný životní styl.</p>
+        <a href="#tinyhouse" class="btn btn--light hero__cta">Objevte více</a>
+      </div>
+      <div class="hero__spacer"></div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 1: O NÁS / INTRO ====== -->
+  <section class="section" id="o-nas">
+    <div class="section__container">
+      <div class="section__col section__col--text reveal">
+        <div class="section__line"></div>
+        <span class="section__label">O nás</span>
+        <h2 class="section__title">Nestavíme domy.<br>Tvoříme životní styl.</h2>
+        <p class="section__text">
+          Jsme Alone Concept — studio, které spojuje architekturu, design a řemeslnou preciznost.
+          Každý náš projekt je originál, navržený na míru lidem, kteří hledají víc než jen střechu
+          nad hlavou. Věříme, že i malý prostor může nabídnout velký komfort.
+        </p>
+        <a href="#" class="btn btn--primary">Více o nás</a>
+      </div>
+      <div class="section__col section__col--media reveal--scale">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="media/Founder/Mira_alone_concept_1-320.avif 320w,
+                    media/Founder/Mira_alone_concept_1-640.avif 640w,
+                    media/Founder/Mira_alone_concept_1-1280.avif 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px">
+          <source
+            type="image/webp"
+            srcset="media/Founder/Mira_alone_concept_1-320.webp 320w,
+                    media/Founder/Mira_alone_concept_1-640.webp 640w,
+                    media/Founder/Mira_alone_concept_1-1280.webp 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px">
+          <img
+            src="media/Founder/Mira_alone_concept_1-1280.jpg"
+            srcset="media/Founder/Mira_alone_concept_1-320.jpg 320w,
+                    media/Founder/Mira_alone_concept_1-640.jpg 640w,
+                    media/Founder/Mira_alone_concept_1-1280.jpg 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px"
+            alt="Zakladatel Alone Concept"
+            class="section__image section-1__image"
+            loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 2: TINY HOUSE SHOWCASE ====== -->
+  <section class="section section--alt section--reverse" id="domy">
+    <div class="section__container">
+      <div class="section__col section__col--text reveal">
+        <div class="section__line"></div>
+        <span class="section__label">Tiny House</span>
+        <h2 class="section__title">Kompaktní luxus<br>v souladu s přírodou</h2>
+        <p class="section__text">
+          Naše tiny house domy jsou navrženy tak, aby maximalizovaly každý centimetr prostoru.
+          Prémiové materiály, chytrá dispozice a důraz na udržitelnost — to vše v designu,
+          který nemusíte schovávat. Moderní bydlení bez kompromisů.
+        </p>
+        <a href="#" class="btn btn--secondary">Prohlédnout modely</a>
+      </div>
+      <div class="section__col section__col--media reveal--scale">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-320.avif 320w,
+                    media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-640.avif 640w,
+                    media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px">
+          <source
+            type="image/webp"
+            srcset="media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-320.webp 320w,
+                    media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-640.webp 640w,
+                    media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.webp 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px">
+          <img
+            src="media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.jpg"
+            srcset="media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-320.jpg 320w,
+                    media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-640.jpg 640w,
+                    media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.jpg 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px"
+            alt="Tiny house vizualizace"
+            class="section__image section-2__image"
+            loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 3: PHILOSOPHY / CTA ====== -->
+  <section class="section" id="tinyhouse">
+    <div class="section__container">
+      <div class="section__col section__col--text reveal">
+        <div class="section__line"></div>
+        <span class="section__label">Filozofie</span>
+        <h2 class="section__title">Každý detail<br>má svůj význam</h2>
+        <p class="section__text">
+          Od prvního náčrtu až po finální realizaci dbáme na to, aby každý prvek ladil
+          s celkem. Inspirujeme se skandinávskou jednoduchostí a japonským respektem k prostoru.
+          Výsledkem je bydlení, které dýchá klidem a elegancí.
+        </p>
+        <a href="#" class="btn btn--primary">Domluvit schůzku</a>
+      </div>
+      <div class="section__col section__col--media reveal--scale">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-320.avif 320w,
+                    media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-640.avif 640w,
+                    media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px">
+          <source
+            type="image/webp"
+            srcset="media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-320.webp 320w,
+                    media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-640.webp 640w,
+                    media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.webp 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px">
+          <img
+            src="media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.jpg"
+            srcset="media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-320.jpg 320w,
+                    media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-640.jpg 640w,
+                    media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.jpg 1280w"
+            sizes="(max-width: 576px) 320px, (max-width: 1024px) 640px, 1280px"
+            alt="Tiny house interiér vizualizace"
+            class="section__image section-3__image"
+            loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="media/logo ALONE/PNG/logo ALONE_B.png" alt="Alone Concept" class="footer__logo">
+        <p class="footer__tagline">Prémiové domy a tiny house projekty. Tvoříme prostory, ve kterých chcete žít.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigace</h4>
+        <nav class="footer__nav" aria-label="Patička — navigace">
+          <a href="#" class="footer__link">Developerské projekty</a>
+          <a href="#domy" class="footer__link">Domy</a>
+          <a href="#tinyhouse" class="footer__link">Tiny house</a>
+          <a href="#o-nas" class="footer__link">O nás</a>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Kontakt</h4>
+        <div class="footer__contact">
+          <p class="footer__contact-item">info@aloneconcept.cz</p>
+          <p class="footer__contact-item">+420 123 456 789</p>
+          <p class="footer__contact-item">Praha, Česká republika</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Alone Concept. Všechna práva vyhrazena.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Obchodní podmínky</a>
+        <a href="#" class="footer__legal-link">Ochrana soukromí</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== FLOATING INQUIRY BUTTON ====== -->
+  <button class="float-btn" type="button" aria-label="Poptat domov">
+    <span class="float-btn__ripple"></span>
+    <span class="float-btn__ripple"></span>
+    <span class="float-btn__ripple"></span>
+    <span class="float-btn__text">Chci<br>domov</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

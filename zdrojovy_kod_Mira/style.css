@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&Dancing+Script:wght@400;700&display=swap');
+
+
+body {
+
+    margin: 0; padding: 0;
+
+    background:
+
+    radial-gradient(circle at center, rgba(0,50,30,0.3) 0%, rgba(0,0,0,0.9) 70%), /* Zelený hint pro zahrady */
+
+    url('autor.jpg') center/cover fixed; /* Tvůj podkres! */
+
+    color: #fff;
+
+    font-family: 'Playfair Display', serif;
+
+    height: 100vh; overflow: hidden;
+
+    position: relative;
+
+}
+
+
+body::before {
+
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+
+    background: radial-gradient(circle, transparent 30%, rgba(0,0,0,0.95) 100%);
+
+    z-index: -2; /* Hloubka */
+
+    filter: blur(1px); /* Subtilní */
+
+}
+
+
+.menu {
+
+    display: flex; justify-content: space-around;
+
+    padding: 3cm 1em 0;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 1.4em; font-weight: 700; letter-spacing: 0.05em;
+
+    backdrop-filter: blur(20px); background: rgba(0,0,0,0.6);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1); /* Hloubka */
+
+    border-radius: 0 0 20px 20px;
+
+}
+
+
+.menu a {
+
+    color: #fff; text-decoration: none; padding: 1em; transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+
+    border-bottom: 2px solid; /* Tvé barvy zůstaly */
+
+}
+
+
+.menu a:hover {
+
+transform: translateY(-2px) scale(1.05); /* 3D lift */
+
+text-shadow: 0 0 20px rgba(255,255,255,0.5);
+
+border-bottom-width: 4px;
+
+}
+
+
+.logo {
+
+max-width: 45%; position: relative; z-index: 10;
+
+filter: drop-shadow(0 20px 40px rgba(0,0,0,0.7));
+
+animation: logoGlow 3s infinite alternate;
+
+}
+
+
+@keyframes logoGlow {
+
+0% { filter: drop-shadow(0 20px 40px rgba(0,0,0,0.7)); }
+
+100% { filter: drop-shadow(0 30px 60px rgba(0,100,80,0.4)); } /* Smaragd glow */
+
+}
+
+
+/* Particles pro radost */
+
+#particles {
+
+position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+
+pointer-events: none;
+
+}
+
+
+.particle {
+
+position: absolute; width: 2px; height: 2px; background: rgba(255,255,255,0.3);
+
+animation: float 20s infinite linear;
+
+}
+
+
+@keyframes float { 0% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; } }
+
+
+/* Subpages – vylepšené karty */
+
+.project-item {
+
+background: rgba(0,0,0,0.7); backdrop-filter: blur(10px);
+
+transition: all 0.4s ease;
+
+}
+
+
+.project-item:hover {
+
+transform: translateZ(20px) rotateX(5deg); /* 3D hloubka */
+
+box-shadow: 0 20px 60px rgba(0,128,128,0.5); /* Smaragd glow */
+
+}
+
+
+/* Responzivita + další stejné jako předtím */
+
+@media (max-width: 768px) { /* ... stejné ... */ }
