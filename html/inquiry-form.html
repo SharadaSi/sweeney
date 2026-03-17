@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Poptávkový formulář Alone Concept — nezávazná poptávka na rodinný dům, tiny house nebo projektovou dokumentaci.">
+	<meta name="robots" content="index, follow">
+	<title>Poptávka | Alone Concept — rodinné domy, tiny house, projektová dokumentace</title>
+	<link rel="canonical" href="https://aloneconcept.cz/poptavka">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<button class="hamburger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-main">
+		<span class="hamburger__bar"></span>
+		<span class="hamburger__bar"></span>
+		<span class="hamburger__bar"></span>
+	</button>
+
+	<div class="nav-overlay" id="nav-overlay"></div>
+
+	<nav class="nav" id="nav-main" aria-label="Hlavní navigace">
+		<div class="nav__header">
+			<a href="index.html">
+                <img src="../media/ALONE_kruh_panacek/SVG/logo ALONE panacek_C.svg" alt="Alone Concept logo" class="nav__logo">
+            </a>
+		</div>
+		<ul class="nav__list">
+			<li class="nav__item">
+				<a href="./about-us.html" class="nav__link">O nás</a>
+			</li>
+			<li class="nav__item">
+				<a href="./index.html#tinyhouse" class="nav__link">Tiny house</a>
+			</li>
+			<li class="nav__item">
+				<a href="./index.html#domy" class="nav__link">Domy</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Developerské projekty</a>
+			</li>
+		</ul>
+		<div class="nav__footer">
+			<p>info@aloneconcept.cz</p>
+			<p>+420 123 456 789</p>
+		</div>
+	</nav>
+
+	<main class="inquiry" role="main">
+		<div class="inquiry__container">
+			<aside class="inquiry__intro" aria-label="Informace o poptávce">
+				<div class="inquiry__status" role="status">
+					<span class="inquiry__status-dot" aria-hidden="true"></span>
+					<span class="inquiry__status-text">Přijímáme nové projekty</span>
+				</div>
+
+				<h1 class="inquiry__title">Postavme váš vysněný domov.</h1>
+
+				<p class="inquiry__lead">
+					Napište nám pár detailů o vašem záměru. Odpovíme vám s jasným návrhem
+					dalšího postupu, časovým rámcem a orientačním rozpočtem.
+				</p>
+
+				<div class="inquiry__marquee" aria-label="S čím vám pomůžeme">
+					<div class="inquiry__marquee-track">
+						<span>Návrh konceptu</span>
+						<span>Rodinné domy</span>
+						<span>Tiny house</span>
+						<span>Projektová dokumentace</span>
+						<span>Interiér na míru</span>
+						<span>Návrh konceptu</span>
+						<span>Kvalitní materály</span>
+						<span>Špičková řemeslná práce</span>
+						<span>Něco dalšího</span>
+						<span>Něco dalšího</span>
+					</div>
+				</div>
+
+				<a class="inquiry__mail" href="mailto:info@aloneconcept.cz">info@aloneconcept.cz</a>
+			</aside>
+
+			<section class="inquiry__panel" aria-label="Poptávkový formulář">
+				<form class="inquiry__form" action="#" method="post" novalidate>
+					<h2 class="inquiry__form-title">Poptávkový formulář</h2>
+
+					<div class="inquiry__row inquiry__row--two">
+						<div class="inquiry__group">
+							<label class="inquiry__label" for="inquiry-name">Jméno a příjmení</label>
+							<input class="inquiry__input" type="text" id="inquiry-name" name="name" placeholder="Jan Novák" autocomplete="name" required autofocus>
+						</div>
+
+						<div class="inquiry__group">
+							<label class="inquiry__label" for="inquiry-email">E-mail</label>
+							<input class="inquiry__input" type="email" id="inquiry-email" name="email" placeholder="jan@firma.cz" autocomplete="email" inputmode="email" required>
+						</div>
+					</div>
+
+					<fieldset class="inquiry__fieldset">
+						<legend class="inquiry__label">Mám zájem o</legend>
+						<div class="inquiry__interest-grid">
+							<label class="inquiry__interest-option">
+								<input class="inquiry__interest-input" type="radio" name="interest" value="rodinny-dum">
+								<span class="inquiry__interest-card">
+									<strong>Rodinný dům</strong>
+									<small>Kompletní návrh a realizace</small>
+								</span>
+							</label>
+
+							<label class="inquiry__interest-option">
+								<input class="inquiry__interest-input" type="radio" name="interest" value="tiny-house">
+								<span class="inquiry__interest-card">
+									<strong>Tiny house</strong>
+									<small>Efektivní bydlení na míru</small>
+								</span>
+							</label>
+
+							<label class="inquiry__interest-option">
+								<input class="inquiry__interest-input" type="radio" name="interest" value="projektova-dokumentace">
+								<span class="inquiry__interest-card">
+									<strong>Projektová dokumentace</strong>
+									<small>Podklady pro povolení i stavbu</small>
+								</span>
+							</label>
+						</div>
+					</fieldset>
+					<fieldset class="inquiry__fieldset">
+						<legend class="inquiry__label">Termín realizace</legend>
+						<div class="inquiry__interest-grid">
+							<label class="inquiry__interest-option">
+								<input class="inquiry__interest-input" type="radio" name="urgency" value="specha">
+								<span class="inquiry__interest-card">
+									<strong>Spěchá to</strong>
+									<small>&lt; 3 měsíce</small>
+								</span>
+							</label>
+
+							<label class="inquiry__interest-option">
+								<input class="inquiry__interest-input" type="radio" name="urgency" value="mam-cas">
+								<span class="inquiry__interest-card">
+									<strong>Mám čas</strong>
+									<small>3 – 12 měsíců</small>
+								</span>
+							</label>
+
+							<label class="inquiry__interest-option">
+								<input class="inquiry__interest-input" type="radio" name="urgency" value="budoucnost">
+								<span class="inquiry__interest-card">
+									<strong>Hudba budoucnosti</strong>
+									<small>&gt; 12 měsíců</small>
+								</span>
+							</label>
+						</div>
+					</fieldset>
+					<div class="inquiry__group">
+						<label class="inquiry__label" for="inquiry-location">Lokalita</label>
+						<div class="inquiry__select-wrap">
+							<select class="inquiry__select" id="inquiry-location" name="location" required>
+								<option value="" selected disabled>Vyberte kraj</option>
+								<option value="praha">Praha</option>
+								<option value="stredocesky">Středočeský kraj</option>
+								<option value="jihocesky">Jihočeský kraj</option>
+								<option value="plzensky">Plzeňský kraj</option>
+								<option value="karlovarsky">Karlovarský kraj</option>
+								<option value="ustecky">Ústecký kraj</option>
+								<option value="liberecky">Liberecký kraj</option>
+								<option value="kralovehradecky">Královéhradecký kraj</option>
+								<option value="pardubicky">Pardubický kraj</option>
+								<option value="vysocina">Kraj Vysočina</option>
+								<option value="jihomoravsky">Jihomoravský kraj</option>
+								<option value="olomoucky">Olomoucký kraj</option>
+								<option value="zlinsky">Zlínský kraj</option>
+								<option value="moravskoslezsky">Moravskoslezský kraj</option>
+							</select>
+						</div>
+					</div>
+
+					<fieldset class="inquiry__fieldset inquiry__budget">
+						<legend class="inquiry__label">Rozpočet</legend>
+						<div class="inquiry__budget-head">
+							<p class="inquiry__budget-display" id="budget-display">4 000 000 Kč - 9 500 000 Kč</p>
+						</div>
+
+						<div class="inquiry__slider" role="group" aria-label="Nastavení rozpočtu">
+							<div class="inquiry__slider-track"></div>
+							<div class="inquiry__slider-highlight" id="slider-highlight"></div>
+							<input
+								class="inquiry__range"
+								id="input-min"
+								type="range"
+								min="4000000"
+								max="15000000"
+								step="500000"
+								value="4000000"
+								aria-label="Minimální rozpočet"
+							>
+							<input
+								class="inquiry__range"
+								id="input-max"
+								type="range"
+								min="4000000"
+								max="15000000"
+								step="500000"
+								value="9500000"
+								aria-label="Maximální rozpočet"
+							>
+						</div>
+
+						<div class="inquiry__budget-edges">
+							<span id="budget-min-label">4 000 000 Kč</span>
+							<span id="budget-max-label">15 000 000 Kč</span>
+						</div>
+					</fieldset>
+
+					<div class="inquiry__group">
+						<label class="inquiry__label" for="inquiry-message">Popis projektu</label>
+						<textarea
+							class="inquiry__textarea"
+							id="inquiry-message"
+							name="message"
+							rows="4"
+							placeholder="Napište nám základní představu, termín a cíl projektu..."
+						></textarea>
+					</div>
+
+					<button class="btn btn--primary inquiry__submit" type="submit" aria-label="Odeslat poptávkový formulář">Odeslat poptávku</button>
+
+					<p class="inquiry__note">Odesláním formuláře souhlasíte se zpracováním osobních údajů pro účely vyřízení poptávky.</p>
+				</form>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__brand">
+				<img src="../media/logo ALONE/PNG/logo ALONE_B.png" alt="Alone Concept" class="footer__logo">
+				<p class="footer__tagline">Prémiové domy a tiny house projekty. Tvoříme prostory, ve kterých chcete žít.</p>
+			</div>
+
+			<div class="footer__col">
+				<h4 class="footer__heading">Navigace</h4>
+				<nav class="footer__nav" aria-label="Patička — navigace">
+					<a href="#" class="footer__link">Developerské projekty</a>
+					<a href="./index.html#domy" class="footer__link">Domy</a>
+					<a href="./index.html#tinyhouse" class="footer__link">Tiny house</a>
+					<a href="./index.html#o-nas" class="footer__link">O nás</a>
+				</nav>
+			</div>
+
+			<div class="footer__col">
+				<h4 class="footer__heading">Kontakt</h4>
+				<div class="footer__contact">
+					<p class="footer__contact-item">info@aloneconcept.cz</p>
+					<p class="footer__contact-item">+420 123 456 789</p>
+					<p class="footer__contact-item">Praha, Česká republika</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<p class="footer__copy">&copy; 2026 Alone Concept. Všechna práva vyhrazena.</p>
+			<div class="footer__legal">
+				<a href="#" class="footer__legal-link">Obchodní podmínky</a>
+				<a href="#" class="footer__legal-link">Ochrana soukromí</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/main.js"></script>
+	<script src="../js/inquiry-form.js"></script>
+</body>
+</html>
