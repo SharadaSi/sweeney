@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tiny house Blažim — prémiový modulární dům o rozloze 35 m² od Alone Concept. Plná izolace, kuchyňský kout, koupelna s WC a terasa.">
+  <title>Blažim | Tiny House | Alone Concept</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ====== HAMBURGER BUTTON ====== -->
+  <button class="hamburger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-main">
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+  </button>
+
+  <!-- ====== NAVIGATION OVERLAY ====== -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ====== NAVIGATION PANEL ====== -->
+  <nav class="nav" id="nav-main" aria-label="Hlavní navigace">
+    <div class="nav__header">
+      <a href="index.html">
+        <img src="../media/ALONE_kruh_panacek/SVG/logo ALONE panacek_C.svg" alt="Alone Concept logo" class="nav__logo">
+      </a>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="about-us.html" class="nav__link">O nás</a>
+      </li>
+      <li class="nav__item">
+        <a href="tiny-houses.html" class="nav__link">Tiny house</a>
+        <button class="nav__toggle" type="button" aria-label="Zobrazit modely" aria-expanded="false"></button>
+        <ul class="nav__sublist">
+          <li class="nav__subitem"><a href="model-blazim.html" class="nav__sublink">Blažim</a></li>
+          <li class="nav__subitem"><a href="model-uvaly.html" class="nav__sublink">Úvaly</a></li>
+          <li class="nav__subitem"><a href="model-kamyk.html" class="nav__sublink">Kamýk</a></li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="index.html#domy" class="nav__link">Rodinné domy</a>
+      </li>
+      <li class="nav__item">
+        <a href="index.html#devprojects" class="nav__link">Developerské projekty</a>
+      </li>
+    </ul>
+    <div class="nav__footer">
+      <p>info@aloneconcept.cz</p>
+      <p>+420 123 456 789</p>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="mp-hero" id="mp-hero">
+    <div class="mp-hero__content">
+      <span class="mp-hero__label">Tiny House</span>
+      <h1 class="mp-hero__title">Blažim</h1>
+      <p class="mp-hero__subtitle">Prémiový modulární dům navržený pro svobodný život v souladu s přírodou</p>
+      <div class="mp-hero__metrics">
+        <div class="mp-hero__metric">
+          <span class="mp-hero__metric-value">35 m²</span>
+          <span class="mp-hero__metric-label">Užitná plocha</span>
+        </div>
+        <div class="mp-hero__metric">
+          <span class="mp-hero__metric-value">od 1 290 000 Kč</span>
+          <span class="mp-hero__metric-label">Cena</span>
+        </div>
+      </div>
+    </div>
+    <div class="mp-hero__visual">
+      <img
+        src="../media/Tiny%20house%20Vizu/250505_Blazim_Camera_B_simple__kopie_-1280-removebg-preview.png"
+        alt="Tiny house model Blažim — exteriér"
+        class="mp-hero__image">
+    </div>
+    <div class="mp-hero__scroll">
+      <span>Scroll</span>
+      <div class="mp-hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ====== SHOWCASE (full-width exterior) ====== -->
+  <section class="mp-showcase" id="mp-showcase">
+    <div class="mp-showcase__image-wrapper">
+      <picture>
+        <source
+          type="image/avif"
+          srcset="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-320.avif 320w,
+                  ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-640.avif 640w,
+                  ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.avif 1280w"
+          sizes="100vw">
+        <source
+          type="image/webp"
+          srcset="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-320.webp 320w,
+                  ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-640.webp 640w,
+                  ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.webp 1280w"
+          sizes="100vw">
+        <img
+          src="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.jpg"
+          alt="Tiny house Blažim — celkový pohled na exteriér"
+          class="mp-showcase__image"
+          loading="lazy"
+          decoding="async">
+      </picture>
+    </div>
+    <div class="mp-showcase__overlay">
+      <blockquote class="mp-showcase__quote">
+        „Domov není místo. Je to pocit."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES ====== -->
+  <section class="mp-features" id="mp-features">
+    <div class="mp-features__container">
+      <div class="mp-features__header">
+        <span class="mp-features__label">Vybavení</span>
+        <h2 class="mp-features__title">Vše, co potřebujete</h2>
+      </div>
+      <div class="mp-features__grid">
+        <div class="mp-features__item">
+          <div class="mp-features__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14zM7.5 13h2v2H11V9h-1.5v2.5h-2V9H6v6h1.5zm9-1.5V9c0-.55-.45-1-1-1h-3v6h3c.55 0 1-.45 1-1m-1.5 0h-2v-3h2z"/></svg>
+          </div>
+          <h3 class="mp-features__name">Plná izolace</h3>
+          <p class="mp-features__desc">Celoroční komfort díky kvalitní tepelné izolaci splňující nejpřísnější normy.</p>
+        </div>
+        <div class="mp-features__item">
+          <div class="mp-features__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41c0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"/></svg>
+          </div>
+          <h3 class="mp-features__name">Kompletní elektroinstalace</h3>
+          <p class="mp-features__desc">Profesionální rozvody připravené k okamžitému připojení na síť.</p>
+        </div>
+        <div class="mp-features__item">
+          <div class="mp-features__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5zm-.5 1.5l1.96 2.5H17V9.5zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5m12 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5"/></svg>
+          </div>
+          <h3 class="mp-features__name">Doprava v ceně</h3>
+          <p class="mp-features__desc">Doručení kamkoliv po České republice bez příplatku.</p>
+        </div>
+        <div class="mp-features__item">
+          <div class="mp-features__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M18 2.01L6 2c-1.1 0-2 .89-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.11-.9-1.99-2-1.99M18 20H6v-9.02h12zm0-11H6V4h12z"/></svg>
+          </div>
+          <h3 class="mp-features__name">Kuchyňský kout</h3>
+          <p class="mp-features__desc">Plně vybavený prostor pro vaření s moderním designem.</p>
+        </div>
+        <div class="mp-features__item">
+          <div class="mp-features__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 10H7V7c0-1.93 1.57-3.5 3.5-3.5S14 5.07 14 7h2c0-3.04-2.46-5.5-5.5-5.5S5 3.96 5 7v3H3v11c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V11c0-.55-.45-1-1-1"/></svg>
+          </div>
+          <h3 class="mp-features__name">Koupelna s WC</h3>
+          <p class="mp-features__desc">Kompletní sociální zázemí s kvalitními sanitárními prvky.</p>
+        </div>
+        <div class="mp-features__item">
+          <div class="mp-features__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19 9.3V4h-3v2.6L12 3L2 12h3v8h5v-6h4v6h5v-8h3z"/></svg>
+          </div>
+          <h3 class="mp-features__name">Terasa</h3>
+          <p class="mp-features__desc">Prostor pro relaxaci pod širým nebem propojující interiér s přírodou.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY (horizontal scroll) ====== -->
+  <section class="mp-gallery" id="mp-gallery">
+    <div class="mp-gallery__header">
+      <span class="mp-gallery__label">Galerie</span>
+      <h2 class="mp-gallery__title">Interiér &amp; Exteriér</h2>
+    </div>
+    <div class="mp-gallery__wrapper">
+      <div class="mp-gallery__track">
+        <div class="mp-gallery__slide">
+          <picture>
+            <source type="image/avif"
+              srcset="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-320.avif 320w,
+                      ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-640.avif 640w,
+                      ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-1280.avif 1280w"
+              sizes="(min-width: 1024px) 50vw, 80vw">
+            <img src="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-1280.jpg"
+              alt="Blažim — exteriér, boční pohled" class="mp-gallery__image" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="mp-gallery__slide">
+          <picture>
+            <source type="image/avif"
+              srcset="../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-320.avif 320w,
+                      ../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-640.avif 640w,
+                      ../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.avif 1280w"
+              sizes="(min-width: 1024px) 50vw, 80vw">
+            <img src="../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.jpg"
+              alt="Blažim — interiér, kuchyňský kout" class="mp-gallery__image" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="mp-gallery__slide">
+          <picture>
+            <source type="image/avif"
+              srcset="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-320.avif 320w,
+                      ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-640.avif 640w,
+                      ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-1280.avif 1280w"
+              sizes="(min-width: 1024px) 50vw, 80vw">
+            <img src="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-1280.jpg"
+              alt="Blažim — interiér, obývací prostor" class="mp-gallery__image" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="mp-gallery__slide">
+          <picture>
+            <source type="image/avif"
+              srcset="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-320.avif 320w,
+                      ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-640.avif 640w,
+                      ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-1280.avif 1280w"
+              sizes="(min-width: 1024px) 50vw, 80vw">
+            <img src="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-1280.jpg"
+              alt="Blažim — interiér, ložnice" class="mp-gallery__image" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="mp-gallery__slide">
+          <picture>
+            <source type="image/avif"
+              srcset="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_G%20(kopie)-320.avif 320w,
+                      ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_G%20(kopie)-640.avif 640w,
+                      ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_G%20(kopie)-1280.avif 1280w"
+              sizes="(min-width: 1024px) 50vw, 80vw">
+            <img src="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_G%20(kopie)-1280.jpg"
+              alt="Blažim — interiér, koupelna" class="mp-gallery__image" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="mp-cta" id="mp-cta">
+    <div class="mp-cta__container">
+      <span class="mp-cta__label">Zaujal vás model Blažim?</span>
+      <h2 class="mp-cta__title">Začněte svou cestu k&nbsp;vysněnému domovu</h2>
+      <p class="mp-cta__text">Pošlete nám nezávaznou poptávku a my se vám ozveme s nabídkou na míru.</p>
+      <a href="inquiry-form.html" class="btn btn--primary mp-cta__btn">Nezávazná poptávka</a>
+      <a href="tiny-houses.html" class="mp-cta__back">&larr; Zpět na přehled modelů</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="../media/logo ALONE/PNG/logo ALONE_B.png" alt="Alone Concept" class="footer__logo">
+        <p class="footer__tagline">Prémiové domy a tiny house projekty. Tvoříme prostory, ve kterých chcete žít.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigace</h4>
+        <nav class="footer__nav" aria-label="Patička — navigace">
+          <a href="index.html#devprojects" class="footer__link">Developerské projekty</a>
+          <a href="index.html#domy" class="footer__link">Rodinné domy</a>
+          <a href="tiny-houses.html" class="footer__link">Tiny house</a>
+          <a href="about-us.html" class="footer__link">O nás</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Kontakt</h4>
+        <div class="footer__contact">
+          <p class="footer__contact-item">info@aloneconcept.cz</p>
+          <p class="footer__contact-item">+420 123 456 789</p>
+          <p class="footer__contact-item">Praha, Česká republika</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Alone Concept. Všechna práva vyhrazena.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Obchodní podmínky</a>
+        <a href="#" class="footer__legal-link">Ochrana soukromí</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== FLOATING INQUIRY BUTTON ====== -->
+  <a href="inquiry-form.html">
+    <button class="float-btn float-btn--dark" type="button" aria-label="Poptat domov">
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__text">Chci<br>domov</span>
+    </button>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/model-page.js"></script>
+</body>
+</html>

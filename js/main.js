@@ -46,6 +46,22 @@
     }
   });
 
+  // ---- Nav Sub-menu Toggle (down-arrow button) ----
+  const navToggles = document.querySelectorAll('.nav__toggle');
+
+  navToggles.forEach((toggleBtn) => {
+    toggleBtn.addEventListener('click', () => {
+      // Find the sibling sublist within the same nav__item
+      const sublist = toggleBtn.nextElementSibling;
+      const isOpen = toggleBtn.classList.contains('is-open');
+
+      // Toggle open/close state on both button and sublist
+      toggleBtn.classList.toggle('is-open', !isOpen);
+      sublist.classList.toggle('is-open', !isOpen);
+      toggleBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+
   // ---- Floating Button: color switch on scroll past hero ----
   const floatBtn = document.querySelector('.float-btn');
   const heroSection = document.querySelector('.hero');

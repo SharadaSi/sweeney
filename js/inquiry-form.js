@@ -17,7 +17,7 @@
 
 	const rangeConfig = {
 		'rodinny-dum': {
-			min: 4000000,
+			min: 2000000,
 			max: 15000000,
 			step: 500000,
 		},
@@ -27,8 +27,8 @@
 			step: 250000,
 		},
 		'projektova-dokumentace': {
-			min: 60000,
-			max: 160000,
+			min: 50000,
+			max: 250000,
 			step: 10000,
 		},
 	};

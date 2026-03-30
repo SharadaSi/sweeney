@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alone Concept — Prémiové tiny house modely. Objevte naše unikátní návrhy malých domů s důrazem na kvalitu a detail.">
+  <title>Tiny Houses | Alone Concept</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ====== HAMBURGER BUTTON ====== -->
+  <button class="hamburger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-main">
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+  </button>
+
+  <!-- ====== NAVIGATION OVERLAY ====== -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ====== NAVIGATION PANEL ====== -->
+  <nav class="nav" id="nav-main" aria-label="Hlavní navigace">
+    <div class="nav__header">
+      <a href="index.html">
+        <img src="../media/ALONE_kruh_panacek/SVG/logo ALONE panacek_C.svg" alt="Alone Concept logo" class="nav__logo">
+      </a>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="about-us.html" class="nav__link">O nás</a>
+      </li>
+      <li class="nav__item">
+        <a href="tiny-houses.html" class="nav__link">Tiny house</a>
+        <button class="nav__toggle" type="button" aria-label="Zobrazit modely" aria-expanded="false"></button>
+        <ul class="nav__sublist">
+          <li class="nav__subitem"><a href="model-blazim.html" class="nav__sublink">Blažim</a></li>
+          <li class="nav__subitem"><a href="model-uvaly.html" class="nav__sublink">Úvaly</a></li>
+          <li class="nav__subitem"><a href="model-kamyk.html" class="nav__sublink">Kamýk</a></li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="index.html#domy" class="nav__link">Rodinné domy</a>
+      </li>
+      <li class="nav__item">
+        <a href="index.html#devprojects" class="nav__link">Developerské projekty</a>
+      </li>
+    </ul>
+    <div class="nav__footer">
+      <p>info@aloneconcept.cz</p>
+      <p>+420 123 456 789</p>
+    </div>
+  </nav>
+
+  <!-- ====== PAGE HEADER ====== -->
+  <header class="th-header">
+    <h1 class="th-header__title">Tiny Houses</h1>
+    <p class="th-header__subtitle">Prémiové modulární domy navržené pro svobodný život</p>
+  </header>
+
+  <!-- ====== ZOOM OVERLAY ====== -->
+  <div class="th-zoom-overlay" id="th-zoom-overlay" aria-hidden="true"></div>
+
+  <!-- ====== MODEL 1: BLAŽIM ====== -->
+  <section class="th-model reveal" id="model-blazim" data-model-url="model-blazim.html">
+    <div class="th-model__visual">
+      <a href="model-blazim.html" class="th-model__image-link" data-model-link>
+        <img
+          src="../media/Tiny%20house%20Vizu/250505_Blazim_Camera_B_simple__kopie_-1280-removebg-preview.png"
+          alt="Tiny house model Blažim — exteriér"
+          class="th-model__image"
+          loading="lazy">
+      </a>
+    </div>
+    <div class="th-model__info">
+      <span class="th-model__label">Tiny House</span>
+      <h2 class="th-model__name">Blažim</h2>
+      <ul class="th-model__specs">
+        <li class="th-model__spec">Plná izolace</li>
+        <li class="th-model__spec">Kompletní elektroinstalace</li>
+        <li class="th-model__spec">Doprava v ceně</li>
+        <li class="th-model__spec">Kuchyňský kout</li>
+        <li class="th-model__spec">Koupelna s WC</li>
+        <li class="th-model__spec">Terasa</li>
+      </ul>
+      <div class="th-model__metrics">
+        <div class="th-model__metric">
+          <svg class="th-model__metric-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5v16h6v-1.5H7V18h2v-1.5H5V15h4v-1.5H7V12h2v-1.5H5V9h4V5h1.5v4H12V7h1.5v2H15V5h1.5v4H18V7h1.5v2H21V3H5a2 2 0 0 0-2 2m3 2a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1"/></svg>
+          <span class="th-model__metric-value">35 m²</span>
+        </div>
+        <div class="th-model__metric">
+          <svg class="th-model__metric-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m21.41 11.58l-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5A1.5 1.5 0 0 1 6.5 5"/></svg>
+          <span class="th-model__metric-value">od 1 290 000 Kč</span>
+        </div>
+      </div>
+      <a href="model-blazim.html" class="th-model__cta" data-model-link>Prohlédnout model</a>
+    </div>
+  </section>
+
+  <!-- ====== MODEL 2: ÚVALY ====== -->
+  <section class="th-model th-model--reverse reveal" id="model-uvaly" data-model-url="model-uvaly.html">
+    <div class="th-model__visual">
+      <a href="model-uvaly.html" class="th-model__image-link" data-model-link>
+        <img
+          src="../media/Tiny%20house%20vizu%2025/bez-pozadi_tiny-house.png"
+          alt="Tiny house model Úvaly — exteriér"
+          class="th-model__image"
+          loading="lazy">
+      </a>
+    </div>
+    <div class="th-model__info">
+      <span class="th-model__label">Tiny House</span>
+      <h2 class="th-model__name">Úvaly</h2>
+      <ul class="th-model__specs">
+        <li class="th-model__spec">Plná izolace</li>
+        <li class="th-model__spec">Kompletní elektroinstalace</li>
+        <li class="th-model__spec">Doprava v ceně</li>
+        <li class="th-model__spec">Kuchyňský kout</li>
+        <li class="th-model__spec">Koupelna s WC</li>
+      </ul>
+      <div class="th-model__metrics">
+        <div class="th-model__metric">
+          <svg class="th-model__metric-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5v16h6v-1.5H7V18h2v-1.5H5V15h4v-1.5H7V12h2v-1.5H5V9h4V5h1.5v4H12V7h1.5v2H15V5h1.5v4H18V7h1.5v2H21V3H5a2 2 0 0 0-2 2m3 2a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1"/></svg>
+          <span class="th-model__metric-value">28 m²</span>
+        </div>
+        <div class="th-model__metric">
+          <svg class="th-model__metric-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m21.41 11.58l-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5A1.5 1.5 0 0 1 6.5 5"/></svg>
+          <span class="th-model__metric-value">od 990 000 Kč</span>
+        </div>
+      </div>
+      <a href="model-uvaly.html" class="th-model__cta" data-model-link>Prohlédnout model</a>
+    </div>
+  </section>
+
+  <!-- ====== MODEL 3: KAMÝK ====== -->
+  <section class="th-model reveal" id="model-kamyk" data-model-url="model-kamyk.html">
+    <div class="th-model__visual">
+      <a href="model-kamyk.html" class="th-model__image-link" data-model-link>
+        <img
+          src="../media/Tiny%20house%20vizu%2025/bez-pozadi_tiny-vizu25.png"
+          alt="Tiny house model Kamýk — exteriér"
+          class="th-model__image"
+          loading="lazy">
+      </a>
+    </div>
+    <div class="th-model__info">
+      <span class="th-model__label">Tiny House</span>
+      <h2 class="th-model__name">Kamýk</h2>
+      <ul class="th-model__specs">
+        <li class="th-model__spec">Plná izolace</li>
+        <li class="th-model__spec">Kompletní elektroinstalace</li>
+        <li class="th-model__spec">Doprava v ceně</li>
+        <li class="th-model__spec">Kuchyňský kout</li>
+        <li class="th-model__spec">Koupelna s WC</li>
+        <li class="th-model__spec">2 ložnice</li>
+      </ul>
+      <div class="th-model__metrics">
+        <div class="th-model__metric">
+          <svg class="th-model__metric-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5v16h6v-1.5H7V18h2v-1.5H5V15h4v-1.5H7V12h2v-1.5H5V9h4V5h1.5v4H12V7h1.5v2H15V5h1.5v4H18V7h1.5v2H21V3H5a2 2 0 0 0-2 2m3 2a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1"/></svg>
+          <span class="th-model__metric-value">42 m²</span>
+        </div>
+        <div class="th-model__metric">
+          <svg class="th-model__metric-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m21.41 11.58l-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 .59 1.42l9 9A2 2 0 0 0 13 22a2 2 0 0 0 1.41-.59l7-7A2 2 0 0 0 22 13a2 2 0 0 0-.59-1.42M13 20l-9-9V4h7l9 9M6.5 5A1.5 1.5 0 1 1 5 6.5A1.5 1.5 0 0 1 6.5 5"/></svg>
+          <span class="th-model__metric-value">od 1 590 000 Kč</span>
+        </div>
+      </div>
+      <a href="model-kamyk.html" class="th-model__cta" data-model-link>Prohlédnout model</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="../media/logo ALONE/PNG/logo ALONE_B.png" alt="Alone Concept" class="footer__logo">
+        <p class="footer__tagline">Prémiové domy a tiny house projekty. Tvoříme prostory, ve kterých chcete žít.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigace</h4>
+        <nav class="footer__nav" aria-label="Patička — navigace">
+          <a href="index.html#devprojects" class="footer__link">Developerské projekty</a>
+          <a href="index.html#domy" class="footer__link">Rodinné domy</a>
+          <a href="tiny-houses.html" class="footer__link">Tiny house</a>
+          <a href="about-us.html" class="footer__link">O nás</a>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Kontakt</h4>
+        <div class="footer__contact">
+          <p class="footer__contact-item">info@aloneconcept.cz</p>
+          <p class="footer__contact-item">+420 123 456 789</p>
+          <p class="footer__contact-item">Praha, Česká republika</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Alone Concept. Všechna práva vyhrazena.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Obchodní podmínky</a>
+        <a href="#" class="footer__legal-link">Ochrana soukromí</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== FLOATING INQUIRY BUTTON ====== -->
+  <a href="inquiry-form.html">
+    <button class="float-btn float-btn--dark" type="button" aria-label="Poptat domov">
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__text">Chci<br>domov</span>
+    </button>
+  </a>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tiny-houses.js"></script>
+</body>
+</html>
