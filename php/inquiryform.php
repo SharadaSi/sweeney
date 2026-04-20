@@ -20,8 +20,8 @@ const RECIPIENT_EMAIL = 'simova.sarka@email.cz';
 const ALLOWED_ORIGINS = [
     'https://aloneconcept.cz',
     'https://www.aloneconcept.cz',
-    'https://sweeney.onrender.com'
-    'https://www.sweeney.onrender.com'
+    'https://sweeney.onrender.com',
+    'https://www.sweeney.onrender.com',
 ];
 
 // Rate-limit: max submissions per session within the cooldown window (seconds)
