@@ -100,3 +100,63 @@
     revealObserver.observe(revealElement);
   });
 })();
+
+// ==========================================================================
+// Email copy-to-clipboard fallback
+// Handles every .email-copy__btn on the page.
+// When the user clicks the clipboard icon:
+//   1. The email address is written to the clipboard via the Clipboard API.
+//   2. The button briefly shows a "Copied!" tooltip as confirmation.
+//   3. After 2 s the UI resets to its default state.
+// ==========================================================================
+
+(() => {
+  // Timeout handle stored per button so rapid re-clicks reset the timer cleanly
+  const resetTimers = new WeakMap();
+
+  const RESET_DELAY_MS = 2000;
+
+  /**
+   * Trigger the copy action for a given copy button element.
+   * @param {HTMLButtonElement} btn - The .email-copy__btn that was activated.
+   */
+  const handleCopyClick = async (btn) => {
+    const email = btn.dataset.email;
+    if (!email) return;
+
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch {
+      // Clipboard API unavailable (unlikely in modern browsers, but degrade gracefully)
+      return;
+    }
+
+    // Show success state on the icon
+    btn.classList.add('email-copy__btn--copied');
+    // Swap to a checkmark icon to give clear visual feedback
+    const icon = btn.querySelector('iconify-icon');
+    if (icon) icon.setAttribute('icon', 'ri:check-line');
+
+    // Show the tooltip
+    const tooltip = btn.closest('.email-copy')?.querySelector('.email-copy__tooltip');
+    if (tooltip) tooltip.classList.add('email-copy__tooltip--visible');
+
+    // Clear any existing reset timer for this button
+    if (resetTimers.has(btn)) clearTimeout(resetTimers.get(btn));
+
+    // Reset back to default after a short delay
+    const timerId = setTimeout(() => {
+      btn.classList.remove('email-copy__btn--copied');
+      if (icon) icon.setAttribute('icon', 'ri:file-copy-line');
+      if (tooltip) tooltip.classList.remove('email-copy__tooltip--visible');
+      resetTimers.delete(btn);
+    }, RESET_DELAY_MS);
+
+    resetTimers.set(btn, timerId);
+  };
+
+  // Attach listeners to all copy buttons present in the DOM
+  document.querySelectorAll('.email-copy__btn').forEach((btn) => {
+    btn.addEventListener('click', () => handleCopyClick(btn));
+  });
+})();

@@ -150,7 +150,6 @@
         pin: true,
         scrub: 1,
         invalidateOnRefresh: true,
-        anticipatePin: 1,
       },
     });
 
