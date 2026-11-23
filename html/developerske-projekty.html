@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alone Concept — Developerské projekty. Autorské rezidenční celky, komunitní tiny-house resorty a komorní viladomy v Česku.">
+  <title>Developerské projekty | Alone Concept</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js" defer></script>
+  <script defer src="https://api.pirsch.io/pa.js"
+      id="pianjs"
+      data-code="VU0TjWNm9Yrsz17y6YzeCQ3C7TOAQfnB"></script>
+</head>
+<body>
+
+  <!-- ====== HAMBURGER BUTTON ====== -->
+  <button class="hamburger" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="nav-main">
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+    <span class="hamburger__bar"></span>
+  </button>
+
+  <!-- ====== NAVIGATION OVERLAY ====== -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ====== NAVIGATION PANEL ====== -->
+  <nav class="nav" id="nav-main" aria-label="Hlavní navigace">
+    <div class="nav__header">
+      <a href="index.html">
+        <img src="../media/ALONE_kruh_panacek/SVG/logo ALONE panacek_C.svg" alt="Alone Concept logo" class="nav__logo">
+      </a>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="about-us.html" class="nav__link">O nás</a>
+      </li>
+      <li class="nav__item">
+        <a href="tiny-houses.html" class="nav__link">Tiny house</a>
+        <button class="nav__toggle" type="button" aria-label="Zobrazit modely" aria-expanded="false"></button>
+        <ul class="nav__sublist">
+          <li class="nav__subitem"><a href="model-blazim.html" class="nav__sublink">Blažim</a></li>
+          <li class="nav__subitem"><a href="model-uvaly.html" class="nav__sublink">Úvaly</a></li>
+          <li class="nav__subitem"><a href="model-kamyk.html" class="nav__sublink">Kamýk</a></li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="index.html#domy" class="nav__link">Rodinné domy</a>
+      </li>
+      <li class="nav__item">
+        <a href="developerske-projekty.html" class="nav__link" aria-current="page">Developerské projekty</a>
+      </li>
+    </ul>
+    <div class="nav__footer">
+      <p><span class="email-copy"><a href="mailto:info@aloneconcept.cz">info@aloneconcept.cz</a><button class="email-copy__btn" type="button" aria-label="Kopírovat e-mail" data-email="info@aloneconcept.cz"><iconify-icon icon="ri:file-copy-line"></iconify-icon></button><span class="email-copy__tooltip" aria-live="polite">Zkopírováno!</span></span></p>
+      <p><a href="tel:+420123456789">+420 123 456 789</a></p>
+    </div>
+  </nav>
+
+  <!-- ====== PAGE HEADER ====== -->
+  <header class="dp-header">
+    <span class="dp-header__eyebrow">Autorské rezidenční celky</span>
+    <h1 class="dp-header__title">Developerské projekty</h1>
+    <p class="dp-header__intro">
+      Nerozprodáváme parcely — tvoříme ucelené mikrosvěty. Každý developerský projekt
+      Alone Concept je limitovanou edicí bydlení s důrazem na kontext krajiny, kvalitu
+      řemesla a život, který v něm má vzniknout.
+    </p>
+  </header>
+
+  <!-- ====== STATUS LEGEND ====== -->
+  <!-- Decorative legend — purely informational, no JS filtering yet -->
+  <div class="dp-filters" role="list" aria-label="Stavy projektů">
+    <span class="dp-filters__item dp-filters__item--active" role="listitem">Vše</span>
+    <span class="dp-filters__item" role="listitem">V realizaci</span>
+    <span class="dp-filters__item" role="listitem">Připravujeme</span>
+    <span class="dp-filters__item" role="listitem">Dokončeno</span>
+  </div>
+
+  <!-- ====== AKTUÁLNÍ PROJEKTY ====== -->
+  <section class="dp-section" id="aktualni" aria-labelledby="aktualni-title">
+    <header class="dp-section__heading">
+      <h2 class="dp-section__title" id="aktualni-title">Aktuální rezidenční projekty</h2>
+      <span class="dp-section__count">04 projekty</span>
+    </header>
+
+    <div class="dp-grid">
+
+      <!-- ---- Card 1: Údolí Blažim ---- -->
+      <a href="#" class="dp-card reveal" aria-label="Více o projektu Údolí Blažim">
+        <div class="dp-card__media">
+          <span class="dp-card__status dp-card__status--inprogress">V realizaci</span>
+          <img
+            src="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.avif"
+            srcset="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-320.avif 320w,
+                    ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-640.avif 640w,
+                    ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20A%205570%20fin%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Vizualizace projektu Údolí Blažim — komunitní rezidenční celek"
+            class="dp-card__image"
+            loading="lazy"
+            decoding="async">
+        </div>
+        <div class="dp-card__body">
+          <span class="dp-card__tagline">Komunitní rezidenční celek</span>
+          <h3 class="dp-card__title">Údolí Blažim</h3>
+          <div class="dp-card__meta">
+            <span class="dp-card__meta-item">Středočeský kraj</span>
+            <span class="dp-card__meta-item">Prodej</span>
+          </div>
+          <p class="dp-card__excerpt">
+            Dvanáct soliterních tiny-houses zasazených do svažitého údolí
+            s vlastním sadem, společnou stodolou a sítí pěších cest.
+          </p>
+          <ul class="dp-card__facts">
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Jednotek</span>
+              <span class="dp-card__fact-value">12</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Pozemek</span>
+              <span class="dp-card__fact-value">2,4 ha</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Dokončení</span>
+              <span class="dp-card__fact-value">2027</span>
+            </li>
+          </ul>
+          <span class="dp-card__link">Více o projektu</span>
+        </div>
+      </a>
+
+      <!-- ---- Card 2: Úvaly Modern ---- -->
+      <a href="#" class="dp-card reveal" aria-label="Více o projektu Úvaly Modern">
+        <div class="dp-card__media">
+          <span class="dp-card__status dp-card__status--exclusive">Exkluzivně</span>
+          <img
+            src="../media/Tiny%20house%20vizu%2025/17408955-b04d-4dee-9ec8-67d9da7320cc%204%20(kopie)-1280.avif"
+            srcset="../media/Tiny%20house%20vizu%2025/17408955-b04d-4dee-9ec8-67d9da7320cc%204%20(kopie)-320.avif 320w,
+                    ../media/Tiny%20house%20vizu%2025/17408955-b04d-4dee-9ec8-67d9da7320cc%204%20(kopie)-640.avif 640w,
+                    ../media/Tiny%20house%20vizu%2025/17408955-b04d-4dee-9ec8-67d9da7320cc%204%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Vizualizace projektu Úvaly Modern — řadové domy"
+            class="dp-card__image"
+            loading="lazy"
+            decoding="async">
+        </div>
+        <div class="dp-card__body">
+          <span class="dp-card__tagline">Soubor rodinných domů</span>
+          <h3 class="dp-card__title">Úvaly Modern</h3>
+          <div class="dp-card__meta">
+            <span class="dp-card__meta-item">Praha-východ</span>
+            <span class="dp-card__meta-item">Prodej</span>
+          </div>
+          <p class="dp-card__excerpt">
+            Osm rodinných domů ve standardu nízkoenergetických staveb.
+            Příjezd z klidové komunikace, vlastní zahrada a rezerva pro fotovoltaiku.
+          </p>
+          <ul class="dp-card__facts">
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Jednotek</span>
+              <span class="dp-card__fact-value">8</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Dispozice</span>
+              <span class="dp-card__fact-value">4+kk – 5+kk</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Dokončení</span>
+              <span class="dp-card__fact-value">2026</span>
+            </li>
+          </ul>
+          <span class="dp-card__link">Více o projektu</span>
+        </div>
+      </a>
+
+      <!-- ---- Card 3: Kamýk Quartet ---- -->
+      <a href="#" class="dp-card reveal" aria-label="Více o projektu Kamýk Quartet">
+        <div class="dp-card__media">
+          <span class="dp-card__status dp-card__status--upcoming">Připravujeme</span>
+          <img
+            src="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-1280.avif"
+            srcset="../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-320.avif 320w,
+                    ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-640.avif 640w,
+                    ../media/Tiny%20house%20Vizu/250505_Blazim_Camera%20B%20simple%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Vizualizace projektu Kamýk Quartet — viladomy"
+            class="dp-card__image"
+            loading="lazy"
+            decoding="async">
+        </div>
+        <div class="dp-card__body">
+          <span class="dp-card__tagline">Komorní viladomy</span>
+          <h3 class="dp-card__title">Kamýk Quartet</h3>
+          <div class="dp-card__meta">
+            <span class="dp-card__meta-item">Praha 4 — Kamýk</span>
+            <span class="dp-card__meta-item">Prodej</span>
+          </div>
+          <p class="dp-card__excerpt">
+            Čtyři viladomy v sousedství vltavského svahu. Soukromé předzahrádky,
+            střešní terasy s výhledem na meandr a sdílené parkovací podzemí.
+          </p>
+          <ul class="dp-card__facts">
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Jednotek</span>
+              <span class="dp-card__fact-value">16</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Dispozice</span>
+              <span class="dp-card__fact-value">2+kk – 4+kk</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Zahájení</span>
+              <span class="dp-card__fact-value">Q3 2026</span>
+            </li>
+          </ul>
+          <span class="dp-card__link">Více o projektu</span>
+        </div>
+      </a>
+
+      <!-- ---- Card 4: Lipno Retreat ---- -->
+      <a href="#" class="dp-card reveal" aria-label="Více o projektu Lipno Retreat">
+        <div class="dp-card__media">
+          <span class="dp-card__status dp-card__status--upcoming">Připravujeme</span>
+          <img
+            src="../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.avif"
+            srcset="../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-320.avif 320w,
+                    ../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-640.avif 640w,
+                    ../media/Tiny%20house%20interier%20Vizu/250528_Blazim_INN_Camera_E%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Vizualizace projektu Lipno Retreat — rekreační tiny houses u jezera"
+            class="dp-card__image"
+            loading="lazy"
+            decoding="async">
+        </div>
+        <div class="dp-card__body">
+          <span class="dp-card__tagline">Rekreační rezort</span>
+          <h3 class="dp-card__title">Lipno Retreat</h3>
+          <div class="dp-card__meta">
+            <span class="dp-card__meta-item">Lipno nad Vltavou</span>
+            <span class="dp-card__meta-item">Prodej / Pronájem</span>
+          </div>
+          <p class="dp-card__excerpt">
+            Šest tiny-houses na svahu nad jezerem v režimu sdílené správy.
+            Investiční model s garantovaným ročním výnosem z krátkodobého pronájmu.
+          </p>
+          <ul class="dp-card__facts">
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Jednotek</span>
+              <span class="dp-card__fact-value">6</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Plocha</span>
+              <span class="dp-card__fact-value">35 – 48 m²</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Dokončení</span>
+              <span class="dp-card__fact-value">2027</span>
+            </li>
+          </ul>
+          <span class="dp-card__link">Více o projektu</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====== DOKONČENÉ PROJEKTY ====== -->
+  <section class="dp-section" id="dokoncene" aria-labelledby="dokoncene-title">
+    <header class="dp-section__heading">
+      <h2 class="dp-section__title" id="dokoncene-title">Dokončené projekty</h2>
+      <span class="dp-section__count">02 reference</span>
+    </header>
+
+    <div class="dp-grid">
+
+      <!-- ---- Card 5: Šumava Solitéry ---- -->
+      <a href="#" class="dp-card reveal" aria-label="Více o projektu Šumava Solitéry">
+        <div class="dp-card__media">
+          <span class="dp-card__status dp-card__status--completed">Dokončeno · 2024</span>
+          <img
+            src="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-1280.avif"
+            srcset="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-320.avif 320w,
+                    ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-640.avif 640w,
+                    ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_C%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Realizace projektu Šumava Solitéry — solitérní rodinné domy"
+            class="dp-card__image"
+            loading="lazy"
+            decoding="async">
+        </div>
+        <div class="dp-card__body">
+          <span class="dp-card__tagline">Solitérní rodinné domy</span>
+          <h3 class="dp-card__title">Šumava Solitéry</h3>
+          <div class="dp-card__meta">
+            <span class="dp-card__meta-item">Šumava — Volary</span>
+            <span class="dp-card__meta-item">Reference</span>
+          </div>
+          <p class="dp-card__excerpt">
+            Tři solitérní domy s režnou modřínovou fasádou. Návrh respektuje
+            tradiční štítovou typologii horské stavby a moderní energetiku.
+          </p>
+          <ul class="dp-card__facts">
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Jednotek</span>
+              <span class="dp-card__fact-value">3</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Plocha</span>
+              <span class="dp-card__fact-value">120 – 165 m²</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Kolaudace</span>
+              <span class="dp-card__fact-value">2024</span>
+            </li>
+          </ul>
+          <span class="dp-card__link">Prohlédnout referenci</span>
+        </div>
+      </a>
+
+      <!-- ---- Card 6: Krkonoše Lodge ---- -->
+      <a href="#" class="dp-card reveal" aria-label="Více o projektu Krkonoše Lodge">
+        <div class="dp-card__media">
+          <span class="dp-card__status dp-card__status--completed">Dokončeno · 2023</span>
+          <img
+            src="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-1280.avif"
+            srcset="../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-320.avif 320w,
+                    ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-640.avif 640w,
+                    ../media/Tiny%20house%20interier%20Vizu/interier/250527_Blazim_INN_Camera_F%20(kopie)-1280.avif 1280w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Realizace projektu Krkonoše Lodge — komorní apartmánový dům"
+            class="dp-card__image"
+            loading="lazy"
+            decoding="async">
+        </div>
+        <div class="dp-card__body">
+          <span class="dp-card__tagline">Apartmánový dům</span>
+          <h3 class="dp-card__title">Krkonoše Lodge</h3>
+          <div class="dp-card__meta">
+            <span class="dp-card__meta-item">Špindlerův Mlýn</span>
+            <span class="dp-card__meta-item">Reference</span>
+          </div>
+          <p class="dp-card__excerpt">
+            Komorní horský dům s pěti apartmány a společným wellness.
+            Tradiční materiály — kámen, opálené dřevo, mosaz — v současném výrazu.
+          </p>
+          <ul class="dp-card__facts">
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Jednotek</span>
+              <span class="dp-card__fact-value">5</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Plocha</span>
+              <span class="dp-card__fact-value">52 – 88 m²</span>
+            </li>
+            <li class="dp-card__fact">
+              <span class="dp-card__fact-label">Kolaudace</span>
+              <span class="dp-card__fact-value">2023</span>
+            </li>
+          </ul>
+          <span class="dp-card__link">Prohlédnout referenci</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====== CTA BAND ====== -->
+  <section class="dp-cta" aria-labelledby="dp-cta-title">
+    <div class="dp-cta__inner reveal">
+      <div>
+        <h2 class="dp-cta__title" id="dp-cta-title">Plánujete vlastní<br>developerský záměr?</h2>
+        <p class="dp-cta__text">
+          Od první studie, přes územní rozhodnutí, až po předání klientům.
+          Pokud hledáte autora, který projektu vtiskne identitu a stojí
+          u celého procesu, ozvěte se.
+        </p>
+      </div>
+      <div class="dp-cta__action">
+        <a href="inquiry-form.html" class="btn btn--primary btn--no-border">Domluvit schůzku</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="../media/logo ALONE/PNG/logo ALONE_B.png" alt="Alone Concept" class="footer__logo">
+        <p class="footer__tagline">Prémiové domy a tiny house projekty. Tvoříme prostory, ve kterých chcete žít.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Navigace</h4>
+        <nav class="footer__nav" aria-label="Patička — navigace">
+          <a href="developerske-projekty.html" class="footer__link">Developerské projekty</a>
+          <a href="index.html#domy" class="footer__link">Rodinné domy</a>
+          <a href="tiny-houses.html" class="footer__link">Tiny house</a>
+          <a href="about-us.html" class="footer__link">O nás</a>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Sociální sítě</h4>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <iconify-icon icon="ri:instagram-line"></iconify-icon>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <iconify-icon icon="ri:facebook-line"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Kontakt</h4>
+        <div class="footer__contact">
+          <p class="footer__contact-item"><span class="email-copy"><a href="mailto:info@aloneconcept.cz">info@aloneconcept.cz</a><button class="email-copy__btn" type="button" aria-label="Kopírovat e-mail" data-email="info@aloneconcept.cz"><iconify-icon icon="ri:file-copy-line"></iconify-icon></button><span class="email-copy__tooltip" aria-live="polite">Zkopírováno!</span></span></p>
+          <p class="footer__contact-item"><a href="tel:+420123456789">+420 123 456 789</a></p>
+          <p class="footer__contact-item">Praha, Česká republika</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Alone Concept. Všechna práva vyhrazena.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Obchodní podmínky</a>
+        <a href="#" class="footer__legal-link">Ochrana soukromí</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== FLOATING INQUIRY BUTTON ====== -->
+  <a href="inquiry-form.html">
+    <button class="float-btn float-btn--dark" type="button" aria-label="Poptat domov">
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__ripple"></span>
+      <span class="float-btn__text">Chci<br>domov</span>
+    </button>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
